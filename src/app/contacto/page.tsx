@@ -51,7 +51,7 @@ export default function ContactoPage() {
                 </div>
 
                 <blockquote className="blockquote border-start border-primary border-4 ps-4 my-5">
-                  <p className="mb-0 fst-italic text-muted">"Motivado por acompañar a las empresas en su camino hacia la expansión internacional, ayudándolas a identificar oportunidades, potenciar sus exportaciones y consolidar su presencia en nuevos mercados."</p>
+                  <p className="mb-0 fst-italic text-muted">&ldquo;Motivado por acompañar a las empresas en su camino hacia la expansión internacional, ayudándolas a identificar oportunidades, potenciar sus exportaciones y consolidar su presencia en nuevos mercados.&rdquo;</p>
                 </blockquote>
               </div>
             </div>

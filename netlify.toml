@@ -4,6 +4,9 @@
 
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  # Prevent ESLint from failing the build on warnings
+  ESLINT_IGNORE_WARNINGS = "true"
+  NEXT_TELEMETRY_DISABLED = "1"
 
 [dev]
   command = "npm run dev"

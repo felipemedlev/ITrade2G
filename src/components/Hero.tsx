@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -40,11 +41,13 @@ export default function Hero() {
             </div>
           </div>
           <div className="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center">
-            <img
+            <Image
               src="/logo.png"
               alt="Internation Trade 2 Grow Logo"
+              width={200}
+              height={200}
               className="img-fluid"
-              style={{ maxHeight: '200px' }}
+              style={{ maxHeight: '200px', objectFit: 'contain' }}
             />
           </div>
         </div>
