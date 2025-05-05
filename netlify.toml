@@ -1,3 +1,25 @@
 [build]
-  publish = ".next"
-  command = "npm run build"
+  command = "npm run netlify-build"
+  publish = "out"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  # Prevent ESLint from failing the build on warnings
+  ESLINT_IGNORE_WARNINGS = "true"
+  NEXT_TELEMETRY_DISABLED = "1"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Handle SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# For a custom domain - uncomment and replace with your domain
+# [[redirects]]
+#   from = "https://example.com/*"
+#   to = "https://www.example.com/:splat"
+#   status = 301
+#   force = true
