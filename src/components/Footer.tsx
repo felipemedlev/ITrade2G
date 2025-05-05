@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="row g-4">
           <div className="col-md-5">
             <h6>International Trade 2 Grow</h6>
-            <p className="text-muted small mb-0">Desarrollo de Negocios de LATAM</p>
+            <p className="text-body-secondary small mb-0">Desarrollo de Negocios de LATAM</p>
           </div>
           <div className="col-md-3">
             <h6>Contacto</h6>

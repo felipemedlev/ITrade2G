@@ -23,9 +23,9 @@ export default function DocumentosPage() {
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
       <main>
-        <div className="bg-primary text-white p-5">
+        <div className="bg-primary text-white p-1">
           <div className="container py-4">
-            <h1 className="display-4 fw-bold">Documentos</h1>
+            <h1 className="display-5 fw-bold">Documentos</h1>
             <p className="lead">Acceda a información detallada sobre nuestros servicios y propuesta de valor</p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function DocumentosPage() {
           <div className="row">
             {documents.map((doc, index) => (
               <div key={index} className="col-md-6 mb-4">
-                <div className="card h-100 shadow-sm">
+                <div className="card bg-white border-primary h-100 shadow-sm">
                   <div className="card-body d-flex flex-column">
                     <div className="d-flex align-items-center mb-3">
                       <Image
@@ -42,11 +42,11 @@ export default function DocumentosPage() {
                         alt="Document"
                         width={36}
                         height={36}
-                        className="me-3"
+                        className="me-2"
                       />
-                      <h3 className="h4 mb-0">{doc.title}</h3>
+                      <h3 className="h4 text-dark mb-0">{doc.title}</h3>
                     </div>
-                    <p className="text-muted mb-4">{doc.description}</p>
+                    <p className="text-dark mb-4">{doc.description}</p>
                     <a
                       href={`/${doc.filename}`}
                       download

@@ -15,7 +15,7 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
       <div className="container">
         <Link href="/" className="navbar-brand d-flex align-items-center">
           <Image
@@ -25,7 +25,7 @@ export default function Navbar() {
             height={30}
             className="me-2"
           />
-          <span>Internation Trade 2 Grow</span>
+          <span className='navbar-brand'>ITrade2G</span>
         </Link>
 
         <button

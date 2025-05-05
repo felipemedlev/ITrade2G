@@ -20,21 +20,21 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="py-5 bg-light position-relative">
+    <section className="py-5 position-relative">
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="display-5 fw-bold mb-3">Nuestros Servicios</h2>
-          <p className="lead text-muted mb-0">Llevamos tus productos al mundo, potenciando tus exportaciones y expansión internacional</p>
+          <p className="lead text-body-primary mb-0">Llevamos tus productos al mundo, potenciando tus exportaciones y expansión internacional</p>
         </div>
 
         <div className="row g-4 justify-content-center">
           {services.map((service, index) => (
-            <div key={index} className="col-md-6 col-lg-4">
-              <div className="card h-100 border-0 shadow-sm hover-shadow transition-all">
-                <div className="card-body text-center p-4">
+            <div key={index} className="col-md-5 col-lg-4">
+              <div className="card h-100 bg-white border-1 border-primary shadow-sm hover-shadow transition-all">
+                <div className="text-center p-4">
                   <div className="mb-4 text-primary opacity-75">{service.icon}</div>
-                  <h3 className="h5 card-title fw-bold mb-3">{service.title}</h3>
-                  <p className="card-text text-muted mb-4">{service.description}</p>
+                  <h3 className="h5 text-dark fw-bold mb-3">{service.title}</h3>
+                  <p className="card-text text-dark mb-4">{service.description}</p>
                   <Link
                     href="/servicios"
                     className="btn btn-outline-primary rounded-pill px-4"

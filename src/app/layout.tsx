@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootswatch/dist/darkly/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Internation Trade 2 Grow - Desarrollo de Negocios de LATAM",
+  title: "International Trade to Grow - Desarrollo de Negocios de LATAM",
   description: "Empresa dedicada al desarrollo de negocios en América Latina",
 };
 
@@ -22,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" data-bs-theme="light">
+    <html lang="es" data-bs-theme="dark">
       <body
-        className={`${inter.variable} antialiased bg-light`}
+        className={`${inter.variable} antialiased`}
       >
         <div className="min-vh-100 d-flex flex-column">
           {children}

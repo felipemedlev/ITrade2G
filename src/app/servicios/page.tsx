@@ -35,9 +35,9 @@ export default function ServiciosPage() {
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
       <main>
-        <div className="bg-primary text-white py-5">
+        <div className="bg-primary text-white py-1">
           <div className="container py-4">
-            <h1 className="display-4 fw-bold">Nuestros Servicios</h1>
+            <h1 className="display-5 fw-bold">Nuestros Servicios</h1>
             <p className="lead">Soluciones integrales para su expansión empresarial en América Latina</p>
           </div>
         </div>
@@ -46,10 +46,10 @@ export default function ServiciosPage() {
           <div className="row row-cols-1 row-cols-md-2 g-4 mb-5">
             {services.map((service, index) => (
               <div key={index} className="col">
-                <div className="card h-100 shadow-sm border-0">
+                <div className="card h-100 bg-white border-1 border-primary shadow-sm hover-shadow transition-all">
                   <div className="card-body p-4">
-                    <h3 className="card-title mb-3">{service.title}</h3>
-                    <p className="card-text">{service.description}</p>
+                    <h3 className="text-primary mb-3">{service.title}</h3>
+                    <p className="text-dark">{service.description}</p>
                   </div>
                 </div>
               </div>
@@ -57,13 +57,11 @@ export default function ServiciosPage() {
           </div>
         </div>
 
-        <LogoCarousel />
-
         <div className="bg-light py-5">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 text-center">
-                <h2 className="mb-4">Impulse su negocio en América Latina</h2>
+                <h2 className="mb-4">Impulsa tu negocio en América Latina</h2>
                 <p className="lead mb-4">Programe una consulta inicial sin compromiso y descubra cómo podemos ayudarle a alcanzar sus objetivos estratégicos en la región.</p>
                 <Link href="/contacto" className="btn btn-primary btn-lg">Solicitar Consulta</Link>
               </div>

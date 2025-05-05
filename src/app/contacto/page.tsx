@@ -6,12 +6,12 @@ export default function ContactoPage() {
   return (
     <>
       <Navbar />
-      <main className="flex-grow-1">
-        <section className="bg-primary text-white py-5">
+      <main className="flex-grow-2">
+        <section className="bg-primary text-white py-1">
           <div className="container py-4">
             <div className="row align-items-center">
               <div className="col-md-8">
-                <h1 className="display-4 fw-bold mb-2">Contacto</h1>
+                <h1 className="display-5 fw-bold mb-2">Contacto</h1>
                 <p className="lead opacity-75 mb-0">Estamos listos para ayudarte a crecer en América Latina</p>
               </div>
             </div>
@@ -26,8 +26,8 @@ export default function ContactoPage() {
                   <Image
                     src="/profile_pic.png"
                     alt="José Antonio Wilson S."
-                    width={210}
-                    height={270}
+                    width={250}
+                    height={320}
                     className="rounded-4 shadow-lg mb-3"
                     priority
                   />
@@ -51,48 +51,49 @@ export default function ContactoPage() {
                 </div>
 
                 <blockquote className="blockquote border-start border-primary border-4 ps-4 my-5">
-                  <p className="mb-0 fst-italic text-muted">&ldquo;Motivado por acompañar a las empresas en su camino hacia la expansión internacional, ayudándolas a identificar oportunidades, potenciar sus exportaciones y consolidar su presencia en nuevos mercados.&rdquo;</p>
+                  <p className="mb-0 fst-italic text-primary">&ldquo;Motivado por acompañar a las empresas en su camino hacia la expansión internacional, ayudándolas a identificar oportunidades, potenciar sus exportaciones y consolidar su presencia en los mercados globales.&rdquo;</p>
                 </blockquote>
               </div>
             </div>
 
             <div className="row g-4">
               <div className="col-md-6">
-                <div className="card h-100 shadow-sm border-0 hover-shadow transition-all">
-                  <div className="card-body p-4">
-                    <h3 className="h4 fw-bold mb-3 text-primary">Perfil</h3>
-                    <p className="text-muted mb-0">Director Comercial con sólida experiencia en marketing y comercio internacional, especializado en la apertura de nuevos mercados, la formación e integración de equipos de alto rendimiento y la consolidación de operaciones comerciales rentables en entornos desafiantes y diversos.</p>
+                <div className="card text-white bg-primary mb-3 h-100">
+                  <div className="card-header">Perfil</div>
+                  <div className="card-body">
+                    <h4 className="card-title">Director Comercial</h4>
+                    <p className="card-text">Sólida experiencia en marketing y comercio internacional, especializado en la apertura de nuevos mercados, la formación e integración de equipos de alto rendimiento y la negociación con todo tipo de clientes.</p>
                   </div>
                 </div>
               </div>
 
               <div className="col-md-6">
-                <div className="card h-100 shadow-sm border-0 hover-shadow transition-all">
-                  <div className="card-body p-4">
-                    <h3 className="h4 fw-bold mb-3 text-primary">Formación</h3>
-                    <ul className="list-unstyled mb-0">
-                      <li className="mb-4">
-                        <h4 className="h6 fw-bold mb-1">Ingeniero Civil Industrial</h4>
-                        <p className="text-muted mb-0">Pontificia Universidad Católica de Valparaíso</p>
-                      </li>
-                      <li>
-                        <h4 className="h6 fw-bold mb-2">Diplomados Universidad de Chile - CLP</h4>
-                        <ul className="ps-3 mb-0 text-muted">
-                          <li>Emprendimiento e Innovación</li>
-                          <li>Equipos de alto rendimiento</li>
-                          <li>Liderazgo y Negociación</li>
-                        </ul>
-                      </li>
-                    </ul>
+                <div className="card text-white bg-primary mb-3 h-100">
+                  <div className="card-header">Formación</div>
+                  <div className="card-body">
+                    <h4 className="card-title">Ingeniero Civil Industrial</h4>
+                    <p className="card-text">
+                      Pontificia Universidad Católica de Valparaíso
+                    </p>
+                    <p className="card-text">
+                      Diplomados Universidad de Chile:
+                      <br />
+                      • Emprendimiento e Innovación
+                      <br />
+                      • Equipos de alto rendimiento
+                      <br />
+                      • Liderazgo y Negociación
+                    </p>
                   </div>
                 </div>
               </div>
 
               <div className="col-md-6">
-                <div className="card h-100 shadow-sm border-0 hover-shadow transition-all">
-                  <div className="card-body p-4">
-                    <h3 className="h4 fw-bold mb-3 text-primary">Aptitudes</h3>
-                    <ul className="list-unstyled mb-0">
+                <div className="card text-white bg-primary mb-3 h-100">
+                  <div className="card-header">Aptitudes</div>
+                  <div className="card-body">
+                    <h4 className="card-title">Competencias clave</h4>
+                    <p className="card-text">
                       {[
                         'Liderazgo y trabajo colaborativo',
                         'Negociación de alto nivel',
@@ -100,21 +101,22 @@ export default function ContactoPage() {
                         'Gestión de proyectos',
                         'Pensamiento sistémico'
                       ].map((aptitud, index) => (
-                        <li key={index} className="mb-2 d-flex align-items-center text-muted">
-                          <i className="bi bi-check2-circle text-primary me-2"></i>
+                        <span key={index} className="d-block mb-1">
+                          <i className="bi bi-check2-circle me-2"></i>
                           {aptitud}
-                        </li>
+                        </span>
                       ))}
-                    </ul>
+                    </p>
                   </div>
                 </div>
               </div>
 
               <div className="col-md-6">
-                <div className="card h-100 shadow-sm border-0 hover-shadow transition-all">
-                  <div className="card-body p-4">
-                    <h3 className="h4 fw-bold mb-3 text-primary">Experiencia</h3>
-                    <p className="text-muted mb-0">Más de 30 años de experiencia liderando el desarrollo de negocios en Latinoamérica, África, Europa y Europa del Este. Amplia trayectoria colaborando con empresas de distintos sectores para co-crear estrategias efectivas de penetración y expansión en mercados internacionales.</p>
+                <div className="card text-white bg-primary mb-3 h-100">
+                  <div className="card-header">Experiencia</div>
+                  <div className="card-body">
+                    <h4 className="card-title">Trayectoria internacional</h4>
+                    <p className="card-text">Más de 30 años de experiencia liderando el desarrollo de negocios en Latinoamérica, África, Europa y Europa del Este. Amplia trayectoria colaborando con empresas de distintos sectores productivos.</p>
                   </div>
                 </div>
               </div>

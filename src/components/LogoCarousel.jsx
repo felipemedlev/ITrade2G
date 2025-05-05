@@ -31,7 +31,9 @@ export default function LogoCarousel() {
   return (
     <section className={`${styles.carouselContainer} py-4`}>
       <div className="container">
-        <h3 className="text-center mb-4 fw-semibold">Nuestros clientes</h3>
+        <div className="text-center mb-5">
+          <h3 className="display-5 fw-bold mb-3">Nuestros clientes</h3>
+        </div>
         <div className={styles.carouselWrapper}>
           <div
             className={`${styles.carousel} ${isPaused ? styles.paused : ''}`}

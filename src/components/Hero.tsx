@@ -26,13 +26,13 @@ export default function Hero() {
       <div className="container py-5 position-relative" style={{ zIndex: 2 }}>
         <div className="row align-items-center">
           <div className="col-lg-7">
-            <h1 className="display-5 fw-bold">Internation Trade 2 Grow</h1>
-            <p className="lead mb-4">Desarrollo de Negocios de LATAM</p>
+            <h1 className="display-6 fw-bold">International Trade To Grow</h1>
+            <p className="lead mb-4">Desarrollo de Negocios en LATAM</p>
             <p className="mb-4">
             Ayudamos a las empresas a desarrollar el músculo que les permita desarrollarse en mercados Internacionales, potenciando sus exportaciones y/o Internacionalizando sus productos.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-              <Link href="/contacto" className="btn btn-light btn-lg px-4 me-md-2">
+              <Link href="/contacto" className="btn btn-primary btn-lg px-4 me-md-2">
                 Contáctenos
               </Link>
               <Link href="/servicios" className="btn btn-outline-light btn-lg px-4">
@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="col-lg-5 mt-5 mt-lg-0 d-flex justify-content-center">
             <Image
               src="/logo.png"
-              alt="Internation Trade 2 Grow Logo"
+              alt="International Trade 2 Grow Logo"
               width={200}
               height={200}
               className="img-fluid"
