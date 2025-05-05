@@ -6,12 +6,7 @@ const nextConfig: NextConfig = {
     domains: [],
     unoptimized: process.env.NODE_ENV === 'production'
   },
-  trailingSlash: true,
-  // Ignore ESLint errors during build on Netlify
-  eslint: {
-    // Don't fail the build for ESLint errors
-    ignoreDuringBuilds: true
-  }
+  trailingSlash: true
 };
 
 export default nextConfig;
