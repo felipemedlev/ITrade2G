@@ -29,7 +29,7 @@ export default function LogoCarousel() {
   };
 
   return (
-    <section className={`${styles.carouselContainer} py-4`}>
+    <section className={`${styles.carouselContainer} mt-3 py-4`}>
       <div className="container">
         <div className="text-center mb-5">
           <h3 className="display-5 fw-bold mb-3">Nuestros clientes</h3>

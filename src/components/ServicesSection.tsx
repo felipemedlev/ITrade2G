@@ -20,7 +20,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="py-5 position-relative">
+    <section className="py-4 position-relative">
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="display-5 fw-bold mb-3">Nuestros Servicios</h2>
