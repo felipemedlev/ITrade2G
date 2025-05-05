@@ -36,11 +36,11 @@ export default function ContactoPage() {
               <div className="col-lg-8">
                 <h2 className="display-6 fw-bold mb-4 text-center text-lg-start">José Antonio Wilson S.</h2>
                 <div className="d-flex flex-column gap-3 mb-4">
-                  <a href="mailto:jwilson@itrade2g.com" className="text-decoration-none d-flex align-items-center">
+                  <a href="mailto:jwilson@itrade2g.com" className="text-decoration-none text-primary d-flex align-items-center">
                     <i className="bi bi-envelope-fill me-3 text-primary"></i>
                     <span>jwilson@itrade2g.com</span>
                   </a>
-                  <a href="tel:+56982936621" className="text-decoration-none d-flex align-items-center">
+                  <a href="tel:+56982936621" className="text-decoration-none text-primary d-flex align-items-center">
                     <i className="bi bi-telephone-fill me-3 text-primary"></i>
                     <span>+ 56 9 8293 6621</span>
                   </a>

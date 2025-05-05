@@ -23,7 +23,7 @@ export default function ServicesSection() {
     <section className="py-4 position-relative">
       <div className="container">
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold mb-3">Nuestros Servicios</h2>
+          <h2 className="display-6 fw-bold mb-3">Nuestros Servicios</h2>
           <p className="lead text-body-primary mb-0">Llevamos tus productos al mundo, potenciando tus exportaciones y expansión internacional</p>
         </div>
 

@@ -4,7 +4,7 @@ export default function Accordion() {
         <div className="container">
           <div className="row mb-4">
             <div className="col text-center">
-              <h2 className="fw-bold mb-3"><i className="bi bi-people-fill me-2 text-primary"></i>Agenciamiento y Externalización</h2>
+              <h2 className="display-6 fw-bold mb-4"><i className="bi bi-people-fill me-2 text-primary"></i>Agenciamiento y Externalización</h2>
             </div>
           </div>
           <div className="row">

@@ -4,7 +4,7 @@ export default function NuevosMercados() {
           <div className="container">
             <div className="row mb-4">
               <div className="col text-center">
-                <h2 className="fw-bold mb-3"><i className="bi bi-door-open me-2 text-primary"></i>Ingreso a Nuevos Mercados</h2>
+                <h2 className="display-6 fw-bold mb-4"><i className="bi bi-door-open me-2 text-primary"></i>Ingreso a Nuevos Mercados</h2>
                 <p className="lead mb-4">Nuestro proceso estructurado para entrar en nuevos mercados:</p>
               </div>
             </div>

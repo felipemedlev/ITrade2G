@@ -3,15 +3,8 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
+  background: var(--background) !important;
   color: var(--foreground);
   font-family: var(--font-inter, Arial, Helvetica, sans-serif);
 }
@@ -50,36 +43,36 @@ body {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 /* Custom styles to lighten the accordion in dark theme */
-[data-bs-theme="dark"] .accordion-item {
+[data-bs-theme="light"] .accordion-item {
   background-color: #f8f9fa; /* Light grey background */
   border-color: #ced4da; /* Adjusted lighter border for better corner blending */
 }
 
-[data-bs-theme="dark"] .accordion-button {
+[data-bs-theme="light"] .accordion-button {
   background-color: #f8f9fa;
   color: #212529; /* Dark text */
 }
 
-[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+[data-bs-theme="light"] .accordion-button:not(.collapsed) {
   background-color: #e9ecef; /* Slightly darker background when active */
   color: #000; /* Black text when active */
 }
 
 /* Ensure icon color contrasts with light background */
-[data-bs-theme="dark"] .accordion-button::after {
+[data-bs-theme="light"] .accordion-button::after {
   filter: invert(1) grayscale(100%) brightness(50%); /* Make the default dark arrow visible */
 }
-[data-bs-theme="dark"] .accordion-button:not(.collapsed)::after {
+[data-bs-theme="light"] .accordion-button:not(.collapsed)::after {
    filter: invert(1) grayscale(100%) brightness(50%); /* Keep it visible when open */
 }
 
 
-[data-bs-theme="dark"] .accordion-body {
+[data-bs-theme="light"] .accordion-body {
   background-color: #ffffff; /* White background for content */
   color: #495057; /* Standard dark grey text for body */
 }
 
 /* Override text-muted for the accordion body in dark theme */
-[data-bs-theme="dark"] .accordion-body.text-muted {
+[data-bs-theme="light"] .accordion-body.text-muted {
    color: #6c757d !important; /* Bootstrap's standard muted color */
 }
