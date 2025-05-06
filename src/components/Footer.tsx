@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <div className="row g-4">
           <div className="col-md-5">
-            <h6>International Trade 2 Grow</h6>
+            <h6>International Trade To Grow</h6>
             <p className="text-body-secondary small mb-0">Desarrollo de Negocios de LATAM</p>
           </div>
           <div className="col-md-3">
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
         <hr className="my-2" />
         <div className="text-center small">
-          <p className="mb-0">&copy; {new Date().getFullYear()} International Trade 2 Grow. Todos los derechos reservados.</p>
+          <p className="mb-0">&copy; {new Date().getFullYear()} International Trade To Grow. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
